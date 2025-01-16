@@ -30,8 +30,12 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(path.resolve(), 'public')));
 
-// Update the CORS configuration
-const allowedOrigins = ['http://localhost:5173', 'https://voter-api-a5nt.onrender.com'];
+// Updated CORS configuration to include the new deployment URL
+const allowedOrigins = [
+  'http://localhost:5173', 
+  'https://voters-ashen.vercel.app', 
+  'https://voters-git-main-enow-john-enowbis-projects.vercel.app'
+];
 
 app.use(cors({
   origin: (origin, callback) => {
