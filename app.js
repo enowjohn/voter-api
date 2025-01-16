@@ -31,7 +31,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(path.resolve(), 'public')));
 
 // Update the CORS configuration
-const allowedOrigins = ['http://localhost:5173', 'https://voters-ashen.vercel.app'];
+const allowedOrigins = ['http://localhost:5173', 'https://voter-api-a5nt.onrender.com'];
 
 app.use(cors({
   origin: (origin, callback) => {
